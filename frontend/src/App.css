@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1a1a2e;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+.app {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.8s ease;
+  padding: 3rem 1rem 4rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.subtitulo {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.buscador {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 480px;
+}
+
+input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #dfe6e9;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border-color: #0984e3;
+}
+
+button {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.mensaje {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.error {
+  color: rgba(255, 220, 220, 0.95);
+}
+
+.tarjeta {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  max-width: 480px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.tarjeta h2 {
+  font-size: 1.5rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+.temperatura {
+  font-size: 5rem;
+  font-weight: 200;
+  color: white;
+  margin: 0.5rem 0;
+  letter-spacing: -4px;
+}
+
+.descripcion {
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.detalles {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.ropa {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.ropa h3 {
+  color: white;
+  margin-bottom: 0.4rem;
+}
+
+.ropa p {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.tarjeta.vacia {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  opacity: 0.85;
+}
+
+.icono-vacio {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.texto-vacio {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.firma {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.firma:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
