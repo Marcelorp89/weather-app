@@ -15,7 +15,7 @@ function App() {
     setClima(null);
 
     try {
-      const respuesta = await fetch(`http://localhost:8000/clima/${ciudad}`);
+      const respuesta = await fetch(`https://weather-app-backend-qhog.onrender.com/clima/${ciudad}`);
       const datos = await respuesta.json();
 
       if (datos.detail) {
