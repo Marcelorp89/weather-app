@@ -14,7 +14,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://weather-app-jade-six-59.vercel.app/"],
+        "https://weather-app-jade-six-59.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
